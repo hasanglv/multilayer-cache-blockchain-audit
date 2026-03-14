@@ -1,0 +1,25 @@
+spring:
+  data:
+    redis:
+      host: localhost
+      port: 6379
+      timeout: 2s
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/thesisdb
+    username: postgres
+    password: password
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+
+server:
+  port: 8081
+
+blockchain:
+  node-url: http://127.0.0.1:8545
+  private-key: e7d34be235e8af29d73f927bd6089c3768768f94eb4213ad9c6e2228496273cc
